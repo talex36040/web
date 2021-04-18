@@ -19,19 +19,20 @@ a {
   text-decoration: none;
 }
 a {
-  color: #0075b2; /* Цвет обычной ссылки */
-  text-decoration: none; /* Убираем подчёркивание у ссылок */
+  color: #0075b2;
+  text-decoration: none;
 }
 a:visited {
-  color: #8f8e8e; /* Цвет посещённой ссылки */
+  color: #8f8e8e;
+  color: rgba(7, 29, 109, 1);
 }
 a,
 button:hover {
-  color: #4924ce; /* Цвет ссылки при наведении */
-  text-decoration: underline; /* Добавляем подчёркивание */
+  color: #4924ce;
+  text-decoration: none;
 }
 .container {
-  width: 1040px;
+  max-width: 1040px;
   margin: 0 auto;
   padding: 0;
 }
@@ -88,7 +89,13 @@ button:hover {
   margin-right: 65px;
   min-width: 870px;
 }
+
 .menu-nav-li {
+  font-size: 19px;
+  font-weight: 600;
+  padding: 0;
+}
+.menu-nav-li-block {
   font-size: 19px;
   font-weight: 600;
   padding: 0;
@@ -140,6 +147,9 @@ h1 {
   float: left;
   margin: 10px;
 }
+.image-gibrid-sex {
+  border-radius: 10px;
+}
 p,
 ol {
   line-height: 26px;
@@ -187,4 +197,45 @@ button {
 }
 .image-gibrid-first:hover {
   box-shadow: 15px 45px 35px rgba(196, 144, 144, 0.3);
+}
+.image-gibrid-sex:hover {
+  box-shadow: 0 45px 135px rgba(0, 0, 0, 0.3);
+}
+.iframe {
+  border: 0px;
+}
+@media (max-width: 1266px) {
+  .menu-nav-li {
+    font-size: 14px;
+    padding: 0px;
+    margin: 5px;
+  }
+  .menu-nav-ul {
+    justify-content: center;
+  }
+}
+@media (max-width: 1090px) {
+  .about-us {
+    margin: 40px;
+  }
+  .main-nav {
+    right: 70px;
+    margin: auto;
+    min-width: 58%;
+  }
+  .menu-nav-ul {
+    justify-content: flex-end;
+    margin: 10px;
+  }
+  .menu-nav-li-block {
+    display: none;
+    font-size: 16px;
+  }
+}
+@media (max-width: 778px) {
+  p,
+  ol {
+    line-height: 23px;
+    font-size: 14px;
+  }
 }
